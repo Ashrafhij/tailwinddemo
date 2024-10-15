@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import ContactSection from './components/ContactSection';
+import HeadDoc from './components/headDoc';
+import HeroSection from './components/HeroSection';
 
 function App() {
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroSection = document.getElementById('hero-section');
+      if (heroSection) {
+        const { top } = heroSection.getBoundingClientRect();
+        // Set the header visibility based on the hero section position
+        if (top < 0) {
+          setIsHeaderVisible(false);
+        } else {
+          setIsHeaderVisible(true);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    // Cleanup event listener on unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {isHeaderVisible && <HeadDoc />}
+      <div id="hero-section">
+        <HeroSection />
+      </div>
+      <div style={{ paddingTop: '100px' }}>
+        <ContactSection />
+      </div>
     </div>
   );
 }
