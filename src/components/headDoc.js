@@ -33,11 +33,6 @@ function HeadDoc() {
           </a>
           <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
             <div className="relative inline-flex">
-              <select className="text-gray-600 border-none bg-white hover:text-gray-900 focus:outline-none">
-                <option value="en">English</option>
-                <option value="fr">French</option>
-                <option value="es">Spanish</option>
-              </select>
             </div>
           </div>
         </div>

@@ -10,9 +10,9 @@ function App() {
     const handleScroll = () => {
       const heroSection = document.getElementById('hero-section');
       if (heroSection) {
-        const { top } = heroSection.getBoundingClientRect();
+        const { bottom } = heroSection.getBoundingClientRect();
         // Set the header visibility based on the hero section position
-        if (top < 0) {
+        if (bottom < 0) {
           setIsHeaderVisible(false);
         } else {
           setIsHeaderVisible(true);
