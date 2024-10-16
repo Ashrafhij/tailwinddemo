@@ -4,40 +4,39 @@ const GallerySection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const galleryItems = [
     { src: "https://www.shutterstock.com/shutterstock/photos/2328458421/display_1500/stock-photo-cropped-shot-of-a-young-caucasian-smiling-woman-before-and-after-veneers-installation-teeth-2328458421.jpg", title: "Shooting Stars", subtitle: "THE SUBTITLE" },
-    { src: "https://dummyimage.com/601x361", title: "The Catalyzer", subtitle: "THE SUBTITLE" },
-    { src: "https://dummyimage.com/603x363", title: "The 400 Blows", subtitle: "THE SUBTITLE" },
+    { src: "https://www.shutterstock.com/shutterstock/photos/2307503479/display_1500/stock-photo-young-woman-smiling-before-and-after-dental-implant-2307503479.jpg", title: "The Catalyzer", subtitle: "THE SUBTITLE" },
+    { src: "https://www.shutterstock.com/shutterstock/photos/2489053763/display_1500/stock-photo-dental-implant-treatment-for-missing-teeth-all-on-and-all-on-x-treatment-for-people-with-no-2489053763.jpg", title: "The 400 Blows", subtitle: "THE SUBTITLE" },
     { src: "https://dummyimage.com/602x362", title: "Neptune", subtitle: "THE SUBTITLE" },
     { src: "https://dummyimage.com/605x365", title: "Holden Caulfield", subtitle: "THE SUBTITLE" },
     { src: "https://dummyimage.com/606x366", title: "Alper Kamu", subtitle: "THE SUBTITLE" }
   ];
 
-  const startX = useRef(0); // To store the starting position of the touch
-  const isSwiping = useRef(false); // To track if the user is currently swiping
+  const startX = useRef(0);
+  const isSwiping = useRef(false);
 
   const handleTouchStart = (e) => {
-    startX.current = e.touches[0].clientX; // Get the initial touch position
-    isSwiping.current = true; // Set swiping to true
+    startX.current = e.touches[0].clientX;
+    isSwiping.current = true;
   };
 
   const handleTouchMove = (e) => {
     if (!isSwiping.current) return;
 
-    const currentX = e.touches[0].clientX; // Get the current touch position
-    const diffX = startX.current - currentX; // Calculate the difference
+    const currentX = e.touches[0].clientX;
+    const diffX = startX.current - currentX;
 
-    // If the difference exceeds a threshold, navigate
     if (Math.abs(diffX) > 50) {
       if (diffX > 0) {
-        handleNext(); // Swipe left
+        handleNext();
       } else {
-        handlePrev(); // Swipe right
+        handlePrev();
       }
-      isSwiping.current = false; // Reset swiping
+      isSwiping.current = false;
     }
   };
 
   const handleTouchEnd = () => {
-    isSwiping.current = false; // Reset swiping when touch ends
+    isSwiping.current = false;
   };
 
   const handlePrev = () => {
@@ -70,9 +69,12 @@ const GallerySection = () => {
             {galleryItems.map((item, index) => (
               <div key={index} className={`flex-shrink-0 transition-transform duration-500 ${index === currentIndex ? "block" : "hidden"} w-full`}>
                 <div className="flex relative">
-                  <img alt="gallery" className="w-full h-full object-cover object-center" src={item.src} />
-                  <div className="absolute inset-0 bg-white opacity-50 flex flex-col items-center justify-center p-4 hover:opacity-75 transition-opacity duration-300">
-                    </div>
+                  <img 
+                    alt="gallery" 
+                    className="w-full h-full object-cover" 
+                    src={item.src} 
+                    style={{ imageRendering: 'crisp-edges' }} // Add this line for better clarity
+                  />
                 </div>
               </div>
             ))}
