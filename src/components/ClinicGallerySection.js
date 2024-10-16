@@ -1,15 +1,14 @@
 import React, { useState, useRef } from 'react';
 
-const GallerySection = () => {
+const ClinicGallerySection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const galleryItems = [
-    { src: "https://www.shutterstock.com/shutterstock/photos/2328458421/display_1500/stock-photo-cropped-shot-of-a-young-caucasian-smiling-woman-before-and-after-veneers-installation-teeth-2328458421.jpg", title: "Shooting Stars", subtitle: "THE SUBTITLE" },
-    { src: "https://www.shutterstock.com/shutterstock/photos/2307503479/display_1500/stock-photo-young-woman-smiling-before-and-after-dental-implant-2307503479.jpg", title: "The Catalyzer", subtitle: "THE SUBTITLE" },
-    { src: "https://www.shutterstock.com/shutterstock/photos/2489053763/display_1500/stock-photo-dental-implant-treatment-for-missing-teeth-all-on-and-all-on-x-treatment-for-people-with-no-2489053763.jpg", title: "The 400 Blows", subtitle: "THE SUBTITLE" },
-    { src: "https://dummyimage.com/602x362", title: "Neptune", subtitle: "THE SUBTITLE" },
-    { src: "https://dummyimage.com/605x365", title: "Holden Caulfield", subtitle: "THE SUBTITLE" },
-    { src: "https://dummyimage.com/606x366", title: "Alper Kamu", subtitle: "THE SUBTITLE" }
+  const clinicImages = [
+    { src: "https://dummyimage.com/800x600/000/fff&text=Clinic+Image+1", alt: "Clinic Image 1" },
+    { src: "https://dummyimage.com/800x600/111/fff&text=Clinic+Image+2", alt: "Clinic Image 2" },
+    { src: "https://dummyimage.com/800x600/222/fff&text=Clinic+Image+3", alt: "Clinic Image 3" },
+    { src: "https://dummyimage.com/800x600/333/fff&text=Clinic+Image+4", alt: "Clinic Image 4" },
+    { src: "https://dummyimage.com/800x600/444/fff&text=Clinic+Image+5", alt: "Clinic Image 5" }
   ];
 
   const startX = useRef(0);
@@ -41,11 +40,11 @@ const GallerySection = () => {
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? galleryItems.length - 1 : prevIndex - 1));
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? clinicImages.length - 1 : prevIndex - 1));
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === galleryItems.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) => (prevIndex === clinicImages.length - 1 ? 0 : prevIndex + 1));
   };
 
   const openModal = () => {
@@ -60,10 +59,9 @@ const GallerySection = () => {
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
+          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Dental Clinic</h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.
-            Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.
+            Take a look at our clinic's environment, designed for your comfort and care.
           </p>
         </div>
 
@@ -75,14 +73,13 @@ const GallerySection = () => {
           onTouchEnd={handleTouchEnd}
         >
           <div className="flex overflow-hidden">
-            {galleryItems.map((item, index) => (
+            {clinicImages.map((item, index) => (
               <div key={index} className={`flex-shrink-0 transition-transform duration-500 ${index === currentIndex ? "block" : "hidden"} w-full`}>
                 <div className="flex relative">
                   <img 
-                    alt="gallery" 
+                    alt={item.alt} 
                     className="w-full h-64 object-cover cursor-pointer" // Added cursor pointer for clickability
                     src={item.src} 
-                    style={{ imageRendering: 'crisp-edges' }} // Better clarity
                     onClick={openModal} // Open modal on click
                   />
                 </div>
@@ -101,7 +98,7 @@ const GallerySection = () => {
 
         {/* Indicator Dots */}
         <div className="flex justify-center mt-4">
-          {galleryItems.map((_, index) => (
+          {clinicImages.map((_, index) => (
             <span 
               key={index} 
               className={`h-2 w-2 mx-1 rounded-full ${currentIndex === index ? 'bg-blue-600' : 'bg-gray-300'}`}
@@ -115,9 +112,9 @@ const GallerySection = () => {
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50" onClick={closeModal}>
           <img 
-            alt="zoomed gallery" 
+            alt={clinicImages[currentIndex].alt} 
             className="max-w-full max-h-full cursor-auto" 
-            src={galleryItems[currentIndex].src} 
+            src={clinicImages[currentIndex].src} 
             onClick={(e) => e.stopPropagation()} // Prevents closing the modal when clicking the image
           />
         </div>
@@ -126,4 +123,4 @@ const GallerySection = () => {
   );
 };
 
-export default GallerySection;
+export default ClinicGallerySection;

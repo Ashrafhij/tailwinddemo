@@ -1,39 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ContactSection from './components/ContactSection';
 import HeadDoc from './components/headDoc';
 import HeroSection from './components/HeroSection';
 import DentalAreasSection from './components/DentalAreasSection';
 import GallerySection from './components/GallerySection';
 import CustomerOpinionSection from './components/CustomerOpinionSection';
+import ClinicGallerySection from './components/ClinicGallerySection';
 
 function App() {
-  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const heroSection = document.getElementById('hero-section');
-      if (heroSection) {
-        const { bottom } = heroSection.getBoundingClientRect();
-        // Set the header visibility based on the hero section position
-        if (bottom < 0) {
-          setIsHeaderVisible(false);
-        } else {
-          setIsHeaderVisible(true);
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    
-    // Cleanup event listener on unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
     <div>
-      {isHeaderVisible && <HeadDoc />}
+      <HeadDoc /> {/* Always render the header */}
       <div id="hero-section">
         <HeroSection />
       </div>
@@ -45,6 +22,9 @@ function App() {
       </div>
       <div>
         <CustomerOpinionSection />
+      </div>
+      <div>
+        <ClinicGallerySection />
       </div>
       <div style={{ paddingTop: '100px' }}>
         <ContactSection />
