@@ -9,24 +9,24 @@ import ClinicGallerySection from './components/ClinicGallerySection';
 
 function App() {
   return (
-    <div>
+    <div className="bg-gradient-to-b from-blue-600/20 to-blue-200/10"> {/* Apply a very slight gradient */}
       <HeadDoc /> {/* Always render the header */}
-      <div id="hero-section">
+      <div id="hero-section" className="py-10">
         <HeroSection />
       </div>
-      <div>
+      <div className="py-10">
         <DentalAreasSection />
       </div>
-      <div>
+      <div className="py-10">
         <GallerySection />
       </div>
-      <div>
+      <div className="py-10">
         <CustomerOpinionSection />
       </div>
-      <div>
+      <div className="py-10">
         <ClinicGallerySection />
       </div>
-      <div style={{ paddingTop: '100px' }}>
+      <div className="py-10">
         <ContactSection />
       </div>
     </div>
