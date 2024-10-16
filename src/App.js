@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import ContactSection from './components/ContactSection';
 import HeadDoc from './components/headDoc';
 import HeroSection from './components/HeroSection';
+import DentalAreasSection from './components/DentalAreasSection';
+import GallerySection from './components/GallerySection';
 
 function App() {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
@@ -33,6 +35,12 @@ function App() {
       {isHeaderVisible && <HeadDoc />}
       <div id="hero-section">
         <HeroSection />
+      </div>
+      <div style={{ paddingTop: '100px' }}>
+        <DentalAreasSection />
+      </div>
+      <div style={{ paddingTop: '100px' }}>
+        <GallerySection />
       </div>
       <div style={{ paddingTop: '100px' }}>
         <ContactSection />
