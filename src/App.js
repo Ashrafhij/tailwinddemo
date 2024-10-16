@@ -4,6 +4,7 @@ import HeadDoc from './components/headDoc';
 import HeroSection from './components/HeroSection';
 import DentalAreasSection from './components/DentalAreasSection';
 import GallerySection from './components/GallerySection';
+import CustomerOpinionSection from './components/CustomerOpinionSection';
 
 function App() {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
@@ -36,11 +37,14 @@ function App() {
       <div id="hero-section">
         <HeroSection />
       </div>
-      <div style={{ paddingTop: '100px' }}>
+      <div>
         <DentalAreasSection />
       </div>
-      <div style={{ paddingTop: '100px' }}>
+      <div>
         <GallerySection />
+      </div>
+      <div>
+        <CustomerOpinionSection />
       </div>
       <div style={{ paddingTop: '100px' }}>
         <ContactSection />

@@ -53,7 +53,7 @@ const GallerySection = () => {
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. 
+            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.
             Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.
           </p>
         </div>
@@ -71,9 +71,9 @@ const GallerySection = () => {
                 <div className="flex relative">
                   <img 
                     alt="gallery" 
-                    className="w-full h-full object-cover" 
+                    className="w-full h-64 object-cover" // Fixed height and object-fit
                     src={item.src} 
-                    style={{ imageRendering: 'crisp-edges' }} // Add this line for better clarity
+                    style={{ imageRendering: 'crisp-edges' }} // Better clarity
                   />
                 </div>
               </div>
@@ -87,6 +87,17 @@ const GallerySection = () => {
           <div className="absolute inset-y-0 right-0 flex items-center">
             <span className="cursor-pointer text-gray-800 text-2xl" onClick={handleNext}>&#10095;</span>
           </div>
+        </div>
+
+        {/* Indicator Dots */}
+        <div className="flex justify-center mt-4">
+          {galleryItems.map((_, index) => (
+            <span 
+              key={index} 
+              className={`h-2 w-2 mx-1 rounded-full ${currentIndex === index ? 'bg-blue-600' : 'bg-gray-300'}`}
+              style={{ display: 'inline-block' }}
+            />
+          ))}
         </div>
       </div>
     </section>
