@@ -8,6 +8,7 @@ import { FiMail, FiPhone } from 'react-icons/fi'; // Importing icons from react-
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Contact from './components/Contact'; // Import the Contact modal
+import Footer from './components/Footer';
 
 function App() {
   const [showModal, setShowModal] = useState(false); // State to control modal visibility
@@ -26,22 +27,22 @@ function App() {
     <div>
       <Navbar />
       <main>
-        <div id="hero-section">
+        <div id="home">
           <Home />
         </div>
-        <div className="py-10 bg-white shadow-md rounded-lg mb-6">
+        <div id="DentalAreasSection" className="py-10 bg-white shadow-md rounded-lg mb-6">
           <DentalAreasSection />
         </div>
-        <div className="py-10 bg-white shadow-md rounded-lg mb-6">
+        <div id="GallerySection" className="py-10 bg-white shadow-md rounded-lg mb-6">
           <GallerySection />
         </div>
-        <div className="py-10 bg-white shadow-md rounded-lg mb-6">
+        <div id="CustomerOpinionSection" className="py-10 bg-white shadow-md rounded-lg mb-6">
           <CustomerOpinionSection />
         </div>
-        <div className="py-10 bg-white shadow-md rounded-lg mb-6">
+        <div id="ClinicGallerySection" className="py-10 bg-white shadow-md rounded-lg mb-6">
           <ClinicGallerySection />
         </div>
-        <div className="py-10 bg-white shadow-md rounded-lg mb-6">
+        <div id="ContactSection" className="py-10 bg-white shadow-md rounded-lg mb-6">
           <ContactSection />
         </div>
 
@@ -49,7 +50,7 @@ function App() {
         <div className="fixed inset-x-0 bottom-0 h-12 bg-white shadow-lg sm:hidden flex">
           <button
             onClick={openModal} // Opens the modal when clicked
-            className="flex-1 bg-indigo-500 text-white flex items-center justify-center relative hover:bg-indigo-600"
+            className="flex-1 bg-[#36ae9a] text-white flex items-center justify-center relative hover:bg-[#2a9c7a]"
           >
             <FiMail className="w-5 h-5 absolute left-2 sm:left-1" />
             <span className="text-sm pl-12 sm:pl-8">השאר פרטים</span>
@@ -75,6 +76,7 @@ function App() {
           </div>
         )}
       </main>
+      <Footer />
     </div>
   );
 }

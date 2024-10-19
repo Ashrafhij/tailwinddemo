@@ -4,12 +4,12 @@ const GallerySection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const galleryItems = [
-    { src: "https://www.shutterstock.com/shutterstock/photos/2328458421/display_1500/stock-photo-cropped-shot-of-a-young-caucasian-smiling-woman-before-and-after-veneers-installation-teeth-2328458421.jpg", title: "Shooting Stars", subtitle: "THE SUBTITLE" },
-    { src: "https://www.shutterstock.com/shutterstock/photos/2307503479/display_1500/stock-photo-young-woman-smiling-before-and-after-dental-implant-2307503479.jpg", title: "The Catalyzer", subtitle: "THE SUBTITLE" },
-    { src: "https://www.shutterstock.com/shutterstock/photos/2489053763/display_1500/stock-photo-dental-implant-treatment-for-missing-teeth-all-on-and-all-on-x-treatment-for-people-with-no-2489053763.jpg", title: "The 400 Blows", subtitle: "THE SUBTITLE" },
-    { src: "https://dummyimage.com/602x362", title: "Neptune", subtitle: "THE SUBTITLE" },
-    { src: "https://dummyimage.com/605x365", title: "Holden Caulfield", subtitle: "THE SUBTITLE" },
-    { src: "https://dummyimage.com/606x366", title: "Alper Kamu", subtitle: "THE SUBTITLE" }
+    { src: "https://www.shutterstock.com/shutterstock/photos/2328458421/display_1500/stock-photo-cropped-shot-of-a-young-caucasian-smiling-woman-before-and-after-veneers-installation-teeth-2328458421.jpg", title: "כוכבי ירי", subtitle: "הכותרת המשנית" },
+    { src: "https://www.shutterstock.com/shutterstock/photos/2307503479/display_1500/stock-photo-young-woman-smiling-before-and-after-dental-implant-2307503479.jpg", title: "הקטליזטור", subtitle: "הכותרת המשנית" },
+    { src: "https://www.shutterstock.com/shutterstock/photos/2489053763/display_1500/stock-photo-dental-implant-treatment-for-missing-teeth-all-on-and-all-on-x-treatment-for-people-with-no-2489053763.jpg", title: "400 הבלואו", subtitle: "הכותרת המשנית" },
+    { src: "https://dummyimage.com/602x362", title: "נפטון", subtitle: "הכותרת המשנית" },
+    { src: "https://dummyimage.com/605x365", title: "הולדין קולפילד", subtitle: "הכותרת המשנית" },
+    { src: "https://dummyimage.com/606x366", title: "אלפר קאמו", subtitle: "הכותרת המשנית" }
   ];
 
   const startX = useRef(0);
@@ -28,9 +28,9 @@ const GallerySection = () => {
 
     if (Math.abs(diffX) > 50) {
       if (diffX > 0) {
-        handleNext();
-      } else {
         handlePrev();
+      } else {
+        handleNext();
       }
       isSwiping.current = false;
     }
@@ -57,14 +57,12 @@ const GallerySection = () => {
   };
 
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font" dir="rtl">
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-col text-center w-full mb-20">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.
-            Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.
-          </p>
+        <div className="flex flex-col text-right w-full mb-20">
+          <h1 className="sm:text-3xl text-2xl font-semibold title-font mb-4 text-gray-900">הגלריה שלנו</h1>
+          {/* Orange line */}
+          <div className="w-full lg:w-1/3 h-1 bg-[#FFA500] mb-4"></div>
         </div>
 
         {/* Slider Container */}
@@ -79,11 +77,10 @@ const GallerySection = () => {
               <div key={index} className={`flex-shrink-0 transition-transform duration-500 ${index === currentIndex ? "block" : "hidden"} w-full`}>
                 <div className="flex relative">
                   <img 
-                    alt="gallery" 
-                    className="w-full h-64 object-cover cursor-pointer" // Added cursor pointer for clickability
+                    alt={item.title} 
+                    className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 h-64 object-cover cursor-pointer mx-auto transition-transform transform hover:scale-105"
                     src={item.src} 
-                    style={{ imageRendering: 'crisp-edges' }} // Better clarity
-                    onClick={openModal} // Open modal on click
+                    onClick={openModal}
                   />
                 </div>
               </div>
@@ -91,10 +88,10 @@ const GallerySection = () => {
           </div>
 
           {/* Navigation Arrows */}
-          <div className="absolute inset-y-0 left-0 flex items-center">
+          <div className="absolute inset-y-0 right-0 flex items-center">
             <span className="cursor-pointer text-gray-800 text-2xl" onClick={handlePrev}>&#10094;</span>
           </div>
-          <div className="absolute inset-y-0 right-0 flex items-center">
+          <div className="absolute inset-y-0 left-0 flex items-center">
             <span className="cursor-pointer text-gray-800 text-2xl" onClick={handleNext}>&#10095;</span>
           </div>
         </div>

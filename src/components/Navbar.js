@@ -58,16 +58,16 @@ const Navbar = () => {
             <Link to="home" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
               בית
             </Link>
-            <Link to="about" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
+            <Link to="GallerySection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
               עלינו
             </Link>
-            <Link to="services" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
+            <Link to="DentalAreasSection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
               שירותים
             </Link>
             <Link to="doctors" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
               רופאים
             </Link>
-            <Link to="blog" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
+            <Link to="CustomerOpinionSection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
               בלוג
             </Link>
           </nav>
