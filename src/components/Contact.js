@@ -15,12 +15,12 @@ const Contact = ({ closeForm }) => {
     >
       <div className="popup-form absolute mt-12 text-black">
         <form className="w-80 md:w-96 space-y-5 bg-white p-5 rounded-xl shadow-lg">
-          <h1 className="text-3xl font-semibold text-center text-backgroundColor">
+          <h1 className="text-3xl font-semibold text-center text-black">
             השאר פרטים ונחזור אליך בהמשך
           </h1>
           <div className="flex flex-col">
             <input
-              className="py-2 px-2 bg-[#d5f2ec] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#36ae9a]"
+              className="py-2 px-2 bg-backgroundColor rounded-lg focus:outline-none focus:ring-2 focus:ring-[orange]"
               type="text"
               name="userFirstName"
               id="userFirstName"
@@ -29,7 +29,7 @@ const Contact = ({ closeForm }) => {
           </div>
           <div className="flex flex-col">
             <input
-              className="py-2 px-2 bg-[#d5f2ec] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#36ae9a]"
+              className="py-2 px-2 bg-backgroundColor rounded-lg focus:outline-none focus:ring-2 focus:ring-[orange]"
               type="number"
               name="userNumber"
               id="userNumber"
@@ -38,7 +38,7 @@ const Contact = ({ closeForm }) => {
           </div>
           <div className="flex flex-col">
             <input
-              className="py-2 px-2 bg-[#d5f2ec] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#36ae9a]"
+              className="py-2 px-2 bg-backgroundColor rounded-lg focus:outline-none focus:ring-2 focus:ring-[orange]"
               type="email"
               name="userEmail"
               id="userEmail"

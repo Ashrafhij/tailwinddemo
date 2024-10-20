@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        backgroundColor: '#36ae9a', // Replace with your desired color
+        backgroundColor: '#f5f5dc', // Replace with your desired color
       },
     },
   },

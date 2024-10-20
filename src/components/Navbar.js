@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Button from "../layouts/Button";
 import Contact from "./Contact";
+import logo from "../assets/img/logo.jpeg"; // Import your logo
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -41,15 +42,16 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed w-full z-10 text-white transition-colors duration-300 ${
-        scrollPosition > 0 ? "bg-[#36ae9a]" : "bg-backgroundColor"
+      className={`fixed w-full z-10 text-black-500 transition-colors duration-300 ${
+        scrollPosition > 0 ? "bg-backgroundColor" : "bg-backgroundColor"
       }`}
     >
       <div>
         <div className="flex flex-row justify-between p-5 md:px-32 px-5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           <div className="flex flex-row items-center cursor-pointer">
-            <Link to="home" spy={true} smooth={true} duration={500}>
-              <h1 className="text-2xl font-semibold">.וולנס ויסטה</h1>
+            <Link to="home" spy={true} smooth={true} duration={500} className="flex items-center">
+              <h1 className="text-2xl font-semibold">חמודי דנטל</h1>
+              <img src={logo} alt="Logo" className="h-12 w-12 ml-2" /> {/* Adjust height and margin */}
             </Link>
           </div>
 
@@ -95,20 +97,20 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`${menu ? "translate-x-0" : "-translate-x-full"} lg:hidden flex flex-col absolute bg-backgroundColor text-white left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}>
+        <div className={`${menu ? "translate-x-0" : "-translate-x-full"} lg:hidden flex flex-col absolute bg-backgroundColor text-black-500 left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}>
           <Link to="home" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
             בית
           </Link>
-          <Link to="about" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
+          <Link to="GallerySection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
             עלינו
           </Link>
-          <Link to="services" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
+          <Link to="DentalAreasSection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
             שירותים
           </Link>
           <Link to="doctors" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
             רופאים
           </Link>
-          <Link to="blog" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
+          <Link to="CustomerOpinionSection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
             בלוג
           </Link>
 

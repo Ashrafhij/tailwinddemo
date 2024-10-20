@@ -3,9 +3,9 @@ import { FaTooth, FaTeeth, FaTeethOpen } from "react-icons/fa"; // Dental icons
 import ServicesCard from "../layouts/ServicesCard";
 
 const DentalAreasSection = () => {
-  const icon1 = <FaTooth size={35} className="text-backgroundColor" />;
-  const icon2 = <FaTeeth size={35} className="text-backgroundColor" />;
-  const icon3 = <FaTeethOpen size={35} className="text-backgroundColor" />;
+  const icon1 = <FaTooth size={35} className="text-black" />;
+  const icon2 = <FaTeeth size={35} className="text-black" />;
+  const icon3 = <FaTeethOpen size={35} className="text-black" />;
 
   return (
     <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 pt-24 lg:pt-16" dir="rtl">
