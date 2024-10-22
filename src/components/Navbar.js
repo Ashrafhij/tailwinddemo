@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Button from "../layouts/Button";
 import Contact from "./Contact";
-import logo from "../assets/img/logo.jpeg"; // Import your logo
+import logo from "../assets/img/logo.jpeg";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -57,11 +57,11 @@ const Navbar = () => {
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex flex-row items-center text-lg font-medium gap-8">
-            <Link to="home" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
-              בית
-            </Link>
-            <Link to="GallerySection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
+          <Link to="ClinicGallerySection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
               עלינו
+            </Link>
+            <Link to="BeforeAndAfter" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
+              לפני ואחרי
             </Link>
             <Link to="DentalAreasSection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
               שירותים
@@ -69,8 +69,8 @@ const Navbar = () => {
             <Link to="Doctors" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
               רופאים
             </Link>
-            <Link to="CustomerOpinionSection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
-              בלוג
+            <Link to="home" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
+              בית
             </Link>
           </nav>
 
@@ -101,17 +101,17 @@ const Navbar = () => {
           <Link to="home" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
             בית
           </Link>
-          <Link to="GallerySection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
-            עלינו
+          <Link to="Doctors" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
+            רופאים
           </Link>
           <Link to="DentalAreasSection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
             שירותים
           </Link>
-          <Link to="Doctors" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
-            רופאים
+          <Link to="BeforeAndAfter" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
+            לפני ואחרי
           </Link>
-          <Link to="CustomerOpinionSection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
-            בלוג
+          <Link to="ClinicGallerySection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
+            עלינו
           </Link>
 
           {/* Add Orange Line at the Bottom */}
