@@ -1,8 +1,6 @@
 import React, { useState } from 'react'; // Import useState for managing modal
 import ContactSection from './components/ContactSection';
 import DentalAreasSection from './components/DentalAreasSection';
-import GallerySection from './components/GallerySection';
-import CustomerOpinionSection from './components/CustomerOpinionSection';
 import ClinicGallerySection from './components/ClinicGallerySection';
 import { FiMail, FiPhone } from 'react-icons/fi'; // Importing icons from react-icons
 import Home from './components/Home';
@@ -10,6 +8,7 @@ import Navbar from './components/Navbar';
 import Contact from './components/Contact'; // Import the Contact modal
 import Footer from './components/Footer';
 import Doctors from './components/Doctors';
+import BeforeAndAfter from './components/BeforeAndAfter';
 
 function App() {
   const [showModal, setShowModal] = useState(false); // State to control modal visibility
@@ -38,10 +37,7 @@ function App() {
           <DentalAreasSection />
         </div>
         <div id="GallerySection" className="py-10 bg-white shadow-md rounded-lg mb-6">
-          <GallerySection />
-        </div>
-        <div id="CustomerOpinionSection" className="py-10 bg-white shadow-md rounded-lg mb-6">
-          <CustomerOpinionSection />
+          <BeforeAndAfter />
         </div>
         <div id="ClinicGallerySection" className="py-10 bg-white shadow-md rounded-lg mb-6">
           <ClinicGallerySection />

@@ -71,7 +71,7 @@ const ClinicGallerySection = () => {
     <section className="text-black body-font">
       <div className="flex flex-col justify-center lg:px-32 px-5 pt-12 text-right">
         <div>
-          <h1 className="text-4xl font-semibold text-right lg:text-right">הרופאים שלנו</h1>
+          <h1 className="text-4xl font-semibold text-right lg:text-right">המרפאה שלנו</h1>
           <p className="mt-2 text-right lg:text-right">
             לורם איפסום דולור סיט, אמט קונסקטורר אדיפיסינג אלית. נטשנש, קווידם.
           </p>
@@ -91,7 +91,7 @@ const ClinicGallerySection = () => {
                 <div className="flex relative">
                   <img 
                     alt={item.alt} 
-                    className="w-3/4 h-64 object-cover cursor-pointer mx-auto" // Center image
+                    className="w-full sm:w-3/4 md:w-2/3 lg:w-64 h-64 object-cover cursor-pointer mx-auto transition-transform transform hover:scale-105" // Wider image on larger screens
                     src={item.src} 
                     onClick={openModal} // Open modal on click
                   />
