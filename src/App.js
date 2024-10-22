@@ -9,6 +9,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Contact from './components/Contact'; // Import the Contact modal
 import Footer from './components/Footer';
+import Doctors from './components/Doctors';
 
 function App() {
   const [showModal, setShowModal] = useState(false); // State to control modal visibility
@@ -29,6 +30,9 @@ function App() {
       <main>
         <div id="home">
           <Home />
+        </div>
+        <div id="Doctors" className="py-10 bg-white shadow-md rounded-lg mb-6">
+          <Doctors />
         </div>
         <div id="DentalAreasSection" className="py-10 bg-white shadow-md rounded-lg mb-6">
           <DentalAreasSection />

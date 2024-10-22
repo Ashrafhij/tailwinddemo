@@ -1,14 +1,26 @@
 import React, { useState, useRef } from 'react';
+import img1 from '../assets/img/1.jpeg';
+import img2 from '../assets/img/2.jpeg';
+import img3 from '../assets/img/3.jpeg';
+import img4 from '../assets/img/4.jpeg';
+import img5 from '../assets/img/5.jpeg';
+import img6 from '../assets/img/6.jpeg';
+import img7 from '../assets/img/7.jpeg';
+import img8 from '../assets/img/8.jpeg';
 
 const ClinicGallerySection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  
   const clinicImages = [
-    { src: "https://img.freepik.com/free-photo/male-dentist-looking-teeth-x-ray-computer-dentist-office_613910-15183.jpg?t=st=1729351654~exp=1729355254~hmac=677dec3e7a50e88e99d0a1fba04fd3d7a7c03e6b23b354bfa707e9c4adcae662&w=996", alt: "Clinic Image 1" },
-    { src: "https://img.freepik.com/free-photo/happy-confident-dentist-clinic_23-2147879211.jpg?t=st=1729351704~exp=1729355304~hmac=4892a2042720aea0da56120c9397581f2ccaecba3d613dc1984bd267b81cb47c&w=360", alt: "Clinic Image 2" },
-    { src: "https://img.freepik.com/free-photo/full-equiped-medical-cabinet_1303-23918.jpg?t=st=1729351726~exp=1729355326~hmac=38fe8c856768d5852ae8e532ce5301189c65a052bfea64344b84222cfc424caf&w=996", alt: "Clinic Image 3" },
-    { src: "https://dummyimage.com/800x600/333/fff&text=Clinic+Image+4", alt: "Clinic Image 4" },
-    { src: "https://dummyimage.com/800x600/444/fff&text=Clinic+Image+5", alt: "Clinic Image 5" }
+    { src: img1, alt: "Clinic Image 1" },
+    { src: img2, alt: "Clinic Image 2" },
+    { src: img3, alt: "Clinic Image 3" },
+    { src: img4, alt: "Clinic Image 4" },
+    { src: img5, alt: "Clinic Image 5" },
+    { src: img6, alt: "Clinic Image 6" },
+    { src: img7, alt: "Clinic Image 7" },
+    { src: img8, alt: "Clinic Image 8" }
   ];
 
   const startX = useRef(0);
@@ -56,11 +68,14 @@ const ClinicGallerySection = () => {
   };
 
   return (
-    <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-col text-right w-full mb-20">
-          <h1 className="sm:text-3xl text-2xl font-semibold title-font mb-4 text-gray-900">המרפאה שלנו</h1>
-          <div className="h-1 w-1/4 bg-orange-500 ml-auto" />
+    <section className="text-black body-font">
+      <div className="flex flex-col justify-center lg:px-32 px-5 pt-12 text-right">
+        <div>
+          <h1 className="text-4xl font-semibold text-right lg:text-right">הרופאים שלנו</h1>
+          <p className="mt-2 text-right lg:text-right">
+            לורם איפסום דולור סיט, אמט קונסקטורר אדיפיסינג אלית. נטשנש, קווידם.
+          </p>
+          <div className="mt-2 h-1 w-26 bg-[#ff8c00] mx-auto lg:mx-0"></div>
         </div>
 
         {/* Slider Container */}
@@ -72,11 +87,11 @@ const ClinicGallerySection = () => {
         >
           <div className="flex overflow-hidden">
             {clinicImages.map((item, index) => (
-              <div key={index} className={`flex-shrink-0 transition-transform duration-500 ${index === currentIndex ? "block" : "hidden"} w-full`}>
+              <div key={index} className={`flex-shrink-0 transition-transform duration-500 ${index === currentIndex ? "block" : "hidden"} w-full flex justify-center`}>
                 <div className="flex relative">
                   <img 
                     alt={item.alt} 
-                    className="max-w-full max-h-full cursor-auto mx-auto" // Added cursor pointer for clickability
+                    className="w-3/4 h-64 object-cover cursor-pointer mx-auto" // Center image
                     src={item.src} 
                     onClick={openModal} // Open modal on click
                   />

@@ -8,8 +8,8 @@ const DentalAreasSection = () => {
   const icon3 = <FaTeethOpen size={35} className="text-black" />;
 
   return (
-    <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 pt-24 lg:pt-16" dir="rtl">
-      <div className="flex flex-col items-center lg:flex-row justify-between">
+    <div className="flex flex-col justify-center lg:px-32 px-5 pt-12 text-right" dir="rtl">
+      <div className="flex flex-col items-center lg:flex-row justify-between mb-8 lg:mb-0">
         <div>
           <h1 className="text-4xl font-semibold text-right lg:text-right">
             השירותים הדנטליים שלנו
@@ -17,9 +17,9 @@ const DentalAreasSection = () => {
           <p className="mt-2 text-right lg:text-right">
             אנו מציעים מגוון רחב של טיפולים דנטליים ללקוחותינו.
           </p>
+          {/* Orange line positioned below the text */}
+          <div className="mt-2 h-1 w-26 bg-[#ff8c00]"></div>
         </div>
-        {/* Orange line instead of button */}
-        <div className="mt-4 lg:mt-0 w-full lg:w-1/3 h-1 bg-[#FFA500]"></div>
       </div>
       <div className="flex flex-col lg:flex-row gap-5 pt-14">
         <ServicesCard icon={icon1} title="טיפולי שיניים" />

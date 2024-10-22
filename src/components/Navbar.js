@@ -66,7 +66,7 @@ const Navbar = () => {
             <Link to="DentalAreasSection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
               שירותים
             </Link>
-            <Link to="doctors" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
+            <Link to="Doctors" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
               רופאים
             </Link>
             <Link to="CustomerOpinionSection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
@@ -107,7 +107,7 @@ const Navbar = () => {
           <Link to="DentalAreasSection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
             שירותים
           </Link>
-          <Link to="doctors" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
+          <Link to="Doctors" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
             רופאים
           </Link>
           <Link to="CustomerOpinionSection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
