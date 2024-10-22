@@ -1,17 +1,30 @@
 {
   "files": {
-    "main.css": "/tailwinddemo/static/css/main.47189bf3.css",
-    "main.js": "/tailwinddemo/static/js/main.606e79ff.js",
-    "static/js/453.a7bf63cc.chunk.js": "/tailwinddemo/static/js/453.a7bf63cc.chunk.js",
-    "static/media/home.png": "/tailwinddemo/static/media/home.aaf461b18c8e01711815.png",
+    "main.css": "/tailwinddemo/static/css/main.0ecac415.css",
+    "main.js": "/tailwinddemo/static/js/main.cd135a90.js",
+    "static/js/453.f5151f31.chunk.js": "/tailwinddemo/static/js/453.f5151f31.chunk.js",
+    "static/media/5.jpeg": "/tailwinddemo/static/media/5.bd7b93508defc2acc168.jpeg",
+    "static/media/4.jpeg": "/tailwinddemo/static/media/4.5239abbf072394daea7b.jpeg",
+    "static/media/7.jpeg": "/tailwinddemo/static/media/7.5fc9c318e7d9d4d9605e.jpeg",
+    "static/media/3.jpeg": "/tailwinddemo/static/media/3.a1c151407fe2daaa1a0a.jpeg",
+    "static/media/6.jpeg": "/tailwinddemo/static/media/6.ac6ee3ebaedf8dc9b0af.jpeg",
+    "static/media/1.jpeg": "/tailwinddemo/static/media/1.c1e52e05c81ba0baec15.jpeg",
+    "static/media/doc2.jpeg": "/tailwinddemo/static/media/doc2.621c5b0be9bf50bd571a.jpeg",
+    "static/media/2.jpeg": "/tailwinddemo/static/media/2.bade9dbc36300de40e93.jpeg",
+    "static/media/doc1.jpeg": "/tailwinddemo/static/media/doc1.a7a471f9a9e60bae9ffc.jpeg",
+    "static/media/8.jpeg": "/tailwinddemo/static/media/8.c5173c5461499142ea2a.jpeg",
     "static/media/logo.jpeg": "/tailwinddemo/static/media/logo.34984a99c1e08e21b66f.jpeg",
+    "static/media/slick.svg": "/tailwinddemo/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/tailwinddemo/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/tailwinddemo/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/tailwinddemo/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tailwinddemo/index.html",
-    "main.47189bf3.css.map": "/tailwinddemo/static/css/main.47189bf3.css.map",
-    "main.606e79ff.js.map": "/tailwinddemo/static/js/main.606e79ff.js.map",
-    "453.a7bf63cc.chunk.js.map": "/tailwinddemo/static/js/453.a7bf63cc.chunk.js.map"
+    "main.0ecac415.css.map": "/tailwinddemo/static/css/main.0ecac415.css.map",
+    "main.cd135a90.js.map": "/tailwinddemo/static/js/main.cd135a90.js.map",
+    "453.f5151f31.chunk.js.map": "/tailwinddemo/static/js/453.f5151f31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47189bf3.css",
-    "static/js/main.606e79ff.js"
+    "static/css/main.0ecac415.css",
+    "static/js/main.cd135a90.js"
   ]
 }
