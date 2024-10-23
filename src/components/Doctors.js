@@ -32,7 +32,7 @@ const Doctors = () => {
     slidesToScroll: 1,
     appendDots: (dots) => (
       <div style={{ display: "flex", justifyContent: "center", marginTop: "10px" }}>
-        <ul style={{ display: "flex", gap: "10px" }}> {/* Adjust spacing between dots */}
+        <ul style={{ display: "flex", gap: "10px" }}> {/* Adjust spacing between dots */ }
           {dots}
         </ul>
       </div>
