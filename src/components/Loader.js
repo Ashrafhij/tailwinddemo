@@ -12,8 +12,8 @@ const Loader = () => {
           border: 8px solid #f3f3f3; /* Light grey */
           border-top: 2px solid #3498db; /* Blue */
           border-radius: 50%;
-          width: 120px; /* Adjusted loader size */
-          height: 120px; /* Adjusted loader size */
+          width: 180px; /* Adjusted loader size */
+          height: 180px; /* Adjusted loader size */
           animation: spin 1s linear infinite;
           z-index: 0; /* Behind the logo */
         }

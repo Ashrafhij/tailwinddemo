@@ -3,12 +3,14 @@ import { Link } from "react-scroll";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Button from "../layouts/Button";
 import Contact from "./Contact";
+import Loader from "../components/Loader"; // Import the Loader component
 import logo from "../assets/img/logo.jpeg";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const [showForm, setShowForm] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [loading, setLoading] = useState(true); // Loading state
 
   const handleChange = () => {
     setMenu(!menu);
@@ -51,13 +53,20 @@ const Navbar = () => {
           <div className="flex flex-row items-center cursor-pointer">
             <Link to="home" spy={true} smooth={true} duration={500} className="flex items-center">
               <h1 className="text-2xl font-semibold">חמודי דנטל</h1>
-              <img src={logo} alt="Logo" className="h-12 w-12 ml-2" /> {/* Adjust height and margin */}
+              {loading && <Loader />} {/* Show loader if loading */}
+              <img 
+                src={logo} 
+                alt="Logo" 
+                className="h-12 w-12 ml-2" // Adjust margin for spacing
+                onLoad={() => setLoading(false)} // Set loading to false when the image is loaded
+                style={{ display: loading ? 'none' : 'block' }} // Hide the logo while loading
+              />
             </Link>
           </div>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex flex-row items-center text-lg font-medium gap-8">
-          <Link to="ClinicGallerySection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
+            <Link to="ClinicGallerySection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
               עלינו
             </Link>
             <Link to="BeforeAndAfter" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
