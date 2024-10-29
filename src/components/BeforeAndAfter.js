@@ -49,7 +49,7 @@ const BeforeAndAfter = () => {
     <section className="flex flex-col justify-center lg:px-32 px-5 pt-12 text-right" dir="rtl">
       <div className="mb-8 lg:mb-0">
         <h1 className="text-4xl font-semibold text-right">לפני ואחרי עם חוות דעת</h1>
-        <div className="w-full lg:w-1/3 h-1 bg-[#FFA500] mb-4"></div>
+        <div className="w-full lg:w-1/3 h-1 bg-secondColor mb-4"></div>
       </div>
 
       {isLoading ? (

@@ -65,14 +65,14 @@ function App() {
             <div className="fixed inset-x-0 bottom-0 h-12 bg-white shadow-lg sm:hidden flex">
               <button
                 onClick={openModal} // Opens the modal when clicked
-                className="flex-1 bg-backgroundColor text-black flex items-center justify-center relative hover:bg-[#FFA500]"
+                className="flex-1 bg-backgroundColor text-white flex items-center justify-center relative hover:bg-secondColor"
               >
                 <FiMail className="w-5 h-5 absolute left-2 sm:left-1" />
                 <span className="text-sm pl-12 sm:pl-8">השאר פרטים</span>
               </button>
               <a
                 href="tel:+972526265341"
-                className="flex-1 bg-[#ff7f50] text-white flex items-center justify-center relative hover:bg-[#ff5f30]" // Replace with your orange color
+                className="flex-1 bg-secondColor text-white flex items-center justify-center relative hover:bg-secondColor" // Replace with your orange color
               >
                 <FiPhone className="w-5 h-5 absolute left-2 sm:left-1" />
                 <span className="text-sm pl-12 sm:pl-8">חייג עכשיו</span>

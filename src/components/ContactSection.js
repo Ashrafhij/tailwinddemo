@@ -24,22 +24,22 @@ function ContactSection() {
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">דוא"ל</h2>
-              <a href="mailto:hamoudidc@gmail.com" className="text-orange-500 leading-relaxed">hamoudidc@gmail.com</a>
+              <a href="mailto:hamoudidc@gmail.com" className="text-secondColor leading-relaxed">hamoudidc@gmail.com</a>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">טלפון</h2>
-              <a href="tel:049868641" className="text-orange-500 leading-relaxed">049868641</a>
+              <a href="tel:049868641" className="text-secondColor leading-relaxed">049868641</a>
             </div>
           </div>
         </div>
         <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 text-right"> {/* Align entire section to the right */}
           <h2 className="sm:text-3xl text-2xl font-semibold title-font mb-4 text-gray-900">משוב</h2>
-          <div className="h-1 w-1/4 bg-orange-500 mt-0 ml-auto" />
+          <div className="h-1 w-1/4 bg-secondColor mt-0 ml-auto" />
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-10 text-sm text-gray-600">שם</label>
             <input
               type="text"
               id="name"
               name="name"
-              className="w-full bg-white rounded border border-orange-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-white rounded border border-blue-300 focus:border-secondColor focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
@@ -48,7 +48,7 @@ function ContactSection() {
               type="email"
               id="email"
               name="email"
-              className="w-full bg-white rounded border border-orange-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-white rounded border border-blue-300 focus:border-secondColor focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
@@ -56,10 +56,10 @@ function ContactSection() {
             <textarea
               id="message"
               name="message"
-              className="w-full bg-white rounded border border-orange-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 h-32 text-base outline-none text-orange-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              className="w-full bg-white rounded border border-blue-300 focus:border-secondColor focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             ></textarea>
           </div>
-          <button className="text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">
+          <button className="text-white bg-secondColor border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
             כפתור
           </button>
           <p className="text-xs text-gray-500 mt-3">בלוג צ'יצ'רון, הלברשיר, נורמקור, איסלנד, טוסלד, ברוק, ויראלי, ארטיזן.</p>

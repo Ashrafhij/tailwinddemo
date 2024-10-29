@@ -66,19 +66,19 @@ const Navbar = () => {
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex flex-row items-center text-lg font-medium gap-8">
-            <Link to="ClinicGallerySection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
+            <Link to="ClinicGallerySection" spy={true} smooth={true} duration={500} className="hover:text-secondColor transition-all cursor-pointer">
               עלינו
             </Link>
-            <Link to="BeforeAndAfter" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
+            <Link to="BeforeAndAfter" spy={true} smooth={true} duration={500} className="hover:text-secondColor transition-all cursor-pointer">
               לפני ואחרי
             </Link>
-            <Link to="DentalAreasSection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
+            <Link to="DentalAreasSection" spy={true} smooth={true} duration={500} className="hover:text-secondColor transition-all cursor-pointer">
               שירותים
             </Link>
-            <Link to="Doctors" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
+            <Link to="Doctors" spy={true} smooth={true} duration={500} className="hover:text-secondColor transition-all cursor-pointer">
               רופאים
             </Link>
-            <Link to="home" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer">
+            <Link to="home" spy={true} smooth={true} duration={500} className="hover:text-secondColor transition-all cursor-pointer">
               בית
             </Link>
           </nav>
@@ -107,24 +107,23 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div className={`${menu ? "translate-x-0" : "-translate-x-full"} lg:hidden flex flex-col absolute bg-backgroundColor text-black-500 left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}>
-          <Link to="home" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
+          <Link to="home" spy={true} smooth={true} duration={500} className="hover:text-secondColor transition-all cursor-pointer" onClick={closeMenu}>
             בית
           </Link>
-          <Link to="Doctors" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
+          <Link to="Doctors" spy={true} smooth={true} duration={500} className="hover:text-secondColor transition-all cursor-pointer" onClick={closeMenu}>
             רופאים
           </Link>
-          <Link to="DentalAreasSection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
+          <Link to="DentalAreasSection" spy={true} smooth={true} duration={500} className="hover:text-secondColor transition-all cursor-pointer" onClick={closeMenu}>
             שירותים
           </Link>
-          <Link to="BeforeAndAfter" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
+          <Link to="BeforeAndAfter" spy={true} smooth={true} duration={500} className="hover:text-secondColor transition-all cursor-pointer" onClick={closeMenu}>
             לפני ואחרי
           </Link>
-          <Link to="ClinicGallerySection" spy={true} smooth={true} duration={500} className="hover:text-orange-500 transition-all cursor-pointer" onClick={closeMenu}>
+          <Link to="ClinicGallerySection" spy={true} smooth={true} duration={500} className="hover:text-secondColor transition-all cursor-pointer" onClick={closeMenu}>
             עלינו
           </Link>
 
-          {/* Add Orange Line at the Bottom */}
-          <div className="h-1 bg-orange-500 w-1/2 mx-auto my-2"></div>
+          <div className="h-1 bg-secondColor w-1/2 mx-auto my-2"></div>
         </div>
       </div>
     </div>

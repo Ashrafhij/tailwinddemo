@@ -27,7 +27,7 @@ const Home = () => {
             backgroundImage: `url(${backgroundImage})`,
           }}
         >
-          {/* Red overlay */}
+          
           <div className="absolute inset-0 bg-backgroundColor opacity-50"></div>
 
           {/* Content */}
@@ -36,8 +36,9 @@ const Home = () => {
             dir="rtl"
           >
             <h1 className="text-5xl lg:text-6xl md:text-4xl sm:text-3xl font-semibold leading-tight text-right">
-              בחירת בריאות מחזקת לחיים תוססים - האמין שלך..
+            האם ידעת אילו השפעות יש לחיוך יפה על האנשים מסביבך?
             </h1>
+            <p>החיוך המושלם שאנחנו יכולים לתת לך יכול לעזור לך לשפר את התקשורת עם האנשים מסביבך , תמיד תזכור בטחון עצמי הוא הדרך להצלחה, ובטח שחיוך מושלם הוא חלק חשוב מאוד להיות עם בטחון עצמי.</p>
 
             <a href="#DentalAreasSection">
               <Button title="ראה שירותים" />

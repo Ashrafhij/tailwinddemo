@@ -17,8 +17,7 @@ const DentalAreasSection = () => {
           <p className="mt-2 text-right lg:text-right">
             אנו מציעים מגוון רחב של טיפולים דנטליים ללקוחותינו.
           </p>
-          {/* Orange line positioned below the text */}
-          <div className="mt-2 h-1 w-26 bg-[#ff8c00]"></div>
+          <div className="mt-2 h-1 w-26 bg-secondColor"></div>
         </div>
       </div>
       <div className="flex flex-col lg:flex-row gap-5 pt-14">

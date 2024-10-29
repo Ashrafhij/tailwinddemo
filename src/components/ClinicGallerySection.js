@@ -98,7 +98,7 @@ const ClinicGallerySection = () => {
           <p className="mt-2 text-right lg:text-right">
             לורם איפסום דולור סיט, אמט קונסקטורר אדיפיסינג אלית. נטשנש, קווידם.
           </p>
-          <div className="mt-2 h-1 w-26 bg-[#ff8c00] mx-auto lg:mx-0"></div>
+          <div className="mt-2 h-1 w-26 bg-secondColor mx-auto lg:mx-0"></div>
         </div>
 
         {/* Loader */}

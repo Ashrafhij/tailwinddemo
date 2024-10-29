@@ -11,7 +11,7 @@ const Contact = ({ closeForm }) => {
   return (
     <div
       className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
-      onClick={handleOverlayClick} // Add click handler to overlay
+      onClick={handleOverlayClick}
     >
       <div className="popup-form absolute mt-12 text-black">
         <form className="w-80 md:w-96 space-y-5 bg-white p-5 rounded-xl shadow-lg">
@@ -20,7 +20,7 @@ const Contact = ({ closeForm }) => {
           </h1>
           <div className="flex flex-col">
             <input
-              className="py-2 px-2 bg-backgroundColor rounded-lg focus:outline-none focus:ring-2 focus:ring-[orange]"
+              className="py-2 px-2 bg-backgroundColor text-white placeholder-gray-300 rounded-lg focus:outline-none focus:text-white focus:ring-2 focus:ring-[blue]"
               type="text"
               name="userFirstName"
               id="userFirstName"
@@ -29,7 +29,7 @@ const Contact = ({ closeForm }) => {
           </div>
           <div className="flex flex-col">
             <input
-              className="py-2 px-2 bg-backgroundColor rounded-lg focus:outline-none focus:ring-2 focus:ring-[orange]"
+              className="py-2 px-2 bg-backgroundColor text-white placeholder-gray-300 rounded-lg focus:outline-none focus:text-white focus:ring-2 focus:ring-[blue]"
               type="number"
               name="userNumber"
               id="userNumber"
@@ -38,7 +38,7 @@ const Contact = ({ closeForm }) => {
           </div>
           <div className="flex flex-col">
             <input
-              className="py-2 px-2 bg-backgroundColor rounded-lg focus:outline-none focus:ring-2 focus:ring-[orange]"
+              className="py-2 px-2 bg-backgroundColor text-white placeholder-gray-300 rounded-lg focus:outline-none focus:text-white focus:ring-2 focus:ring-[blue]"
               type="email"
               name="userEmail"
               id="userEmail"

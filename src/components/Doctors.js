@@ -74,17 +74,17 @@ const Doctors = () => {
           <p className="mt-2 text-right lg:text-right">
             לורם איפסום דולור סיט, אמט קונסקטורר אדיפיסינג אלית. נטשנש, קווידם.
           </p>
-          <div className="mt-2 h-1 w-26 bg-[#ff8c00] mx-auto lg:mx-0"></div>
+          <div className="mt-2 h-1 w-26 bg-secondColor mx-auto lg:mx-0"></div>
         </div>
         <div className="flex gap-5 mt-4 lg:mt-0">
           <button
-            className="hidden lg:flex bg-backgroundColor text-[#ff8c00] px-4 py-2 rounded-lg active:bg-[#d5f2ec]"
+            className="hidden lg:flex bg-backgroundColor text-secondColor px-4 py-2 rounded-lg active:bg-[#d5f2ec]"
             onClick={() => slider.current.slickPrev()}
           >
             <BsChevronRight size={25} />
           </button>
           <button
-            className="hidden lg:flex bg-backgroundColor text-[#ff8c00] px-4 py-2 rounded-lg active:bg-[#d5f2ec]"
+            className="hidden lg:flex bg-backgroundColor text-secondColor px-4 py-2 rounded-lg active:bg-[#d5f2ec]"
             onClick={() => slider.current.slickNext()}
           >
             <BsChevronLeft size={25} />
@@ -99,7 +99,7 @@ const Doctors = () => {
               key={index}
             >
               <div className="flex flex-row-reverse items-center">
-                <div className="h-32 w-32 rounded-full overflow-hidden border-4 border-[#ff8c00] shadow-lg">
+                <div className="h-32 w-32 rounded-full overflow-hidden border-4 border-secondColor shadow-lg">
                   <img
                     src={e.img}
                     alt={e.name}
