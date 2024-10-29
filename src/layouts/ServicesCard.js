@@ -1,20 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
-const ServicesCard = ({ icon, title }) => {
+const ServicesCard = ({ icon, title, description }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDescription = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className=" group flex flex-col items-center text-center gap-2 w-full lg:w-1/3 p-5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg cursor-pointer lg:hover:-translate-y-6 transition duration-300 ease-in-out">
-      <div className=" bg-backgroundColor p-3 rounded-full transition-colors duration-300 ease-in-out group-hover:bg-secondColor">
-        {icon}
+    <div
+      className="border p-5 rounded-lg shadow-lg hover:border-secondColor cursor-pointer"
+      onClick={toggleDescription}
+    >
+      <div className="flex items-center gap-3">
+        <img src={icon} alt={`${title} Icon`} className="w-8 h-8" /> {/* Use the icon as an img */}
+        <h2 className="text-2xl font-semibold">{title}</h2>
       </div>
-      <h1 className=" font-semibold text-lg">{title}</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-        praesentium asperiores unde veniam, perspiciatis neque!
-      </p>
-
-      <h3 className=" text-secondColor cursor-pointer hover:text-secondColor transition duration-300 ease-in-out">
-        Learn more
-      </h3>
+      <div
+        className={`transition-all duration-500 ease-in-out overflow-hidden ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}
+      >
+        {isOpen && (
+          <div className="mt-3 text-sm text-gray-700" dangerouslySetInnerHTML={{ __html: description }} />
+        )}
+      </div>
     </div>
   );
 };
