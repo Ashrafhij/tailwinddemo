@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tailwinddemo/static/css/main.3f9dba39.css",
-    "main.js": "/tailwinddemo/static/js/main.c82f65e8.js",
+    "main.css": "/tailwinddemo/static/css/main.df7948c4.css",
+    "main.js": "/tailwinddemo/static/js/main.752f0eb9.js",
     "static/js/453.f5151f31.chunk.js": "/tailwinddemo/static/js/453.f5151f31.chunk.js",
     "static/media/5.jpeg": "/tailwinddemo/static/media/5.bd7b93508defc2acc168.jpeg",
     "static/media/4.jpeg": "/tailwinddemo/static/media/4.5239abbf072394daea7b.jpeg",
@@ -15,17 +15,23 @@
     "static/media/8.jpeg": "/tailwinddemo/static/media/8.c5173c5461499142ea2a.jpeg",
     "static/media/logo.jpeg": "/tailwinddemo/static/media/logo.34984a99c1e08e21b66f.jpeg",
     "static/media/test.jpg": "/tailwinddemo/static/media/test.04b24c6dc988df366849.jpg",
+    "static/media/braces.png": "/tailwinddemo/static/media/braces.1ef779004ea47ee4a712.png",
+    "static/media/tooth-whitening.png": "/tailwinddemo/static/media/tooth-whitening.e2bd9b7dc9359a107091.png",
+    "static/media/tooth.png": "/tailwinddemo/static/media/tooth.b3735be7c4f6e5137717.png",
+    "static/media/dental-insurance.png": "/tailwinddemo/static/media/dental-insurance.ac3901670a0c7a7122c0.png",
+    "static/media/endodontist.png": "/tailwinddemo/static/media/endodontist.f6a9dbee200289ba0a0f.png",
+    "static/media/dental-implant.png": "/tailwinddemo/static/media/dental-implant.03ebc2f0d5c477c1b3d4.png",
     "static/media/slick.svg": "/tailwinddemo/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/tailwinddemo/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/tailwinddemo/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/tailwinddemo/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tailwinddemo/index.html",
-    "main.3f9dba39.css.map": "/tailwinddemo/static/css/main.3f9dba39.css.map",
-    "main.c82f65e8.js.map": "/tailwinddemo/static/js/main.c82f65e8.js.map",
+    "main.df7948c4.css.map": "/tailwinddemo/static/css/main.df7948c4.css.map",
+    "main.752f0eb9.js.map": "/tailwinddemo/static/js/main.752f0eb9.js.map",
     "453.f5151f31.chunk.js.map": "/tailwinddemo/static/js/453.f5151f31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f9dba39.css",
-    "static/js/main.c82f65e8.js"
+    "static/css/main.df7948c4.css",
+    "static/js/main.752f0eb9.js"
   ]
 }
