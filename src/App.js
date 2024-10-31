@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react'; // Import useState and useEf
 import ContactSection from './components/ContactSection';
 import DentalAreasSection from './components/DentalAreasSection';
 import ClinicGallerySection from './components/ClinicGallerySection';
-import { FiMail, FiPhone } from 'react-icons/fi'; // Importing icons from react-icons
+import { FiPhone } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa';
+
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Contact from './components/Contact'; // Import the Contact modal
@@ -67,7 +69,7 @@ function App() {
                 onClick={openModal} // Opens the modal when clicked
                 className="flex-1 bg-backgroundColor text-white flex items-center justify-center relative hover:bg-secondColor"
               >
-                <FiMail className="w-5 h-5 absolute left-2 sm:left-1" />
+                <FaWhatsapp className="w-5 h-5 absolute left-2 sm:left-1" />
                 <span className="text-sm pl-12 sm:pl-8">השאר פרטים</span>
               </button>
               <a

@@ -1,15 +1,30 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import Slider from 'react-slick';
-import img1 from '../assets/img/test.jpg';
-import img2 from '../assets/img/test.jpg';
-import img3 from '../assets/img/test.jpg';
+import img1 from '../assets/img/beforendafter/11.jpeg';
+import img2 from '../assets/img/beforendafter/22.jpeg';
+import img3 from '../assets/img/beforendafter/33.jpeg';
+import img4 from '../assets/img/beforendafter/44.jpeg';
+import img5 from '../assets/img/beforendafter/55.jpeg';
+import img6 from '../assets/img/beforendafter/66.jpeg';
+import img7 from '../assets/img/beforendafter/77.jpeg';
+import img8 from '../assets/img/beforendafter/88.jpeg';
+import img9 from '../assets/img/beforendafter/99.jpeg';
+import img10 from '../assets/img/beforendafter/12.jpeg';
 
 const BeforeAndAfter = () => {
   // Use useMemo to memoize galleryItems
   const galleryItems = useMemo(() => [
-    { src: img1, title: "Gallery Item 1", opinion: { name: "יואב כהן", rating: 5, comment: "היה לי ניסיון מצוין במרפאת השיניים!" } },
+    { src: img1, title: "Gallery Item 1", opinion: { name: "*", rating: 5, comment: "היה לי ניסיון מצוין במרפאת השיניים!" } },
     { src: img2, title: "Gallery Item 2", opinion: { name: "שרה לוי", rating: 4, comment: "שירות מאוד מקצועי." } },
     { src: img3, title: "Gallery Item 3", opinion: { name: "מיכאל גולדשטין", rating: 5, comment: "הטיפול הדנטלי הטוב ביותר שקיבלתי!" } },
+    { src: img4, title: "Gallery Item 4", opinion: { name: "יואב כהן", rating: 5, comment: "היה לי ניסיון מצוין במרפאת השיניים!" } },
+    { src: img5, title: "Gallery Item 5", opinion: { name: "שרה לוי", rating: 4, comment: "שירות מאוד מקצועי." } },
+    { src: img6, title: "Gallery Item 6", opinion: { name: "מיכאל גולדשטין", rating: 5, comment: "הטיפול הדנטלי הטוב ביותר שקיבלתי!" } },
+    { src: img7, title: "Gallery Item 7", opinion: { name: "שרה לוי", rating: 4, comment: "שירות מאוד מקצועי." } },
+    { src: img8, title: "Gallery Item 8", opinion: { name: "מיכאל גולדשטין", rating: 5, comment: "הטיפול הדנטלי הטוב ביותר שקיבלתי!" } },
+    { src: img9, title: "Gallery Item 9", opinion: { name: "יואב כהן", rating: 5, comment: "היה לי ניסיון מצוין במרפאת השיניים!" } },
+    { src: img10, title: "Gallery Item 10", opinion: { name: "יואב כהן", rating: 5, comment: "היה לי ניסיון מצוין במרפאת השיניים!" } },
+
     // Add more images and opinions as needed
   ], []); // Empty dependency array ensures it's only created once
 

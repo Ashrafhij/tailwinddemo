@@ -13,7 +13,7 @@ const Footer = () => {
           © 2024 Hamoudi Dental Clinic
         </p>
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-          <a className="text-gray-500 hover:text-blue-500" href="/" aria-label="Facebook">
+          <a className="text-gray-500 hover:text-blue-500" href="https://www.facebook.com/share/1M1zbk7Ymb/?mibextid=LQQJ4d" aria-label="Facebook">
             <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
             </svg>

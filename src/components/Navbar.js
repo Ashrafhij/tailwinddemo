@@ -52,12 +52,12 @@ const Navbar = () => {
         <div className="flex flex-row justify-between p-5 md:px-32 px-5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           <div className="flex flex-row items-center cursor-pointer">
             <Link to="home" spy={true} smooth={true} duration={500} className="flex items-center">
-              <h1 className="text-2xl font-semibold">חמודי דנטל</h1>
+              {/* <h1 className="text-2xl font-semibold">חמודי דנטל</h1> */}
               {loading && <Loader />} {/* Show loader if loading */}
               <img 
                 src={logo} 
                 alt="Logo" 
-                className="h-12 w-12 ml-2" // Adjust margin for spacing
+                className="h-12 w-15 ml-5" // Adjust margin for spacing
                 onLoad={() => setLoading(false)} // Set loading to false when the image is loaded
                 style={{ display: loading ? 'none' : 'block' }} // Hide the logo while loading
               />
