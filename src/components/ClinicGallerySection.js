@@ -94,10 +94,12 @@ const ClinicGallerySection = () => {
     <section className="text-black body-font">
       <div className="flex flex-col justify-center lg:px-32 px-5 pt-12 text-right">
         <div>
-          <h1 className="text-4xl font-semibold text-right lg:text-right">המרפאה שלנו</h1>
-          <p className="mt-2 text-right lg:text-right">
-            לורם איפסום דולור סיט, אמט קונסקטורר אדיפיסינג אלית. נטשנש, קווידם.
-          </p>
+        <h1 className="text-4xl font-semibold text-right lg:text-right">המרפאה שלנו</h1>
+<p className="mt-2 text-right lg:text-right">
+  המרפאה שלנו מציעה סביבה נעימה ומתקדמת לטיפולי שיניים. 
+  .אנו שמים דגש על נוחות המטופלים ושימוש בציוד טכנולוגי חדיש כדי להבטיח טיפול איכותי ומותאם אישית לכל אחד ואחת
+</p>
+
           <div className="mt-2 h-1 w-26 bg-secondColor mx-auto lg:mx-0"></div>
         </div>
 

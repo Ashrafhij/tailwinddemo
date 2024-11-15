@@ -66,7 +66,7 @@ const Contact = ({ closeForm }) => {
 
     const { userFirstName, userNumber, userEmail } = formData;
     const message = `שלום, אני ${userFirstName}. רציתי לקבל פרטים נוספים. ניתן לחזור אליי בטלפון ${userNumber}.${userEmail ? ` כתובת האימייל שלי היא ${userEmail}.` : ""}`;
-    const whatsappUrl = `https://wa.me/+972542283102?text=${encodeURIComponent(message)}`; // Replace with owner's WhatsApp number
+    const whatsappUrl = `https://wa.me/+972526265341?text=${encodeURIComponent(message)}`; // Replace with owner's WhatsApp number
 
     window.open(whatsappUrl, "_blank");
   };

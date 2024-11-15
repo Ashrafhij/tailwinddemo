@@ -61,40 +61,36 @@ const BeforeAndAfter = () => {
   };
 
   return (
-    <section className="flex flex-col justify-center lg:px-32 px-5 pt-12 text-right" dir="rtl">
-      <div className="mb-8 lg:mb-0">
-        <h1 className="text-4xl font-semibold text-right">לפני ואחרי עם חוות דעת</h1>
-        <div className="w-full lg:w-1/3 h-1 bg-secondColor mb-4"></div>
-      </div>
+    <section
+  className="flex flex-col justify-center lg:px-32 px-5 pt-12 text-right"
+  dir="rtl"
+>
+  <div className="mb-8 lg:mb-0">
+    <h1 className="text-4xl font-semibold text-right">לפני ואחרי</h1>
+    <div className="w-full lg:w-1/3 h-1 bg-secondColor mb-4"></div>
+  </div>
 
-      {isLoading ? (
-        <div className="flex justify-center items-center h-64">
-          {/* Tailwind spinner loader */}
-          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500 border-solid"></div>
-        </div>
-      ) : (
-        <div className="w-full lg:w-2/3">
-          {/* Opinion Slider */}
-          <Slider {...settings}>
-            {galleryItems.map((item, index) => (
-              <div key={index} className="flex flex-col items-center p-4 border rounded-lg">
-                <img alt={item.title} className="w-full h-64 object-cover mb-4" src={item.src} />
-                <h2 className="text-lg font-bold mb-2">{item.opinion.name}</h2>
-                <div className="flex items-center justify-end mb-2">
-                  {Array.from({ length: item.opinion.rating }).map((_, starIdx) => (
-                    <span key={starIdx} className="text-yellow-500">&#9733;</span>
-                  ))}
-                  {Array.from({ length: 5 - item.opinion.rating }).map((_, starIdx) => (
-                    <span key={starIdx} className="text-gray-300">&#9733;</span>
-                  ))}
-                </div>
-                <p className="leading-relaxed text-base">{item.opinion.comment}</p>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      )}
-    </section>
+  {isLoading ? (
+    <div className="flex justify-center items-center h-64">
+      <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500 border-solid"></div>
+    </div>
+  ) : (
+    <div className="w-full lg:w-2/3">
+      <Slider {...settings}>
+        {galleryItems.map((item, index) => (
+          <div key={index} className="flex flex-col items-center p-4 border rounded-lg">
+            <img
+              alt={item.title}
+              className="w-full h-64 object-cover mb-4"
+              src={item.src}
+            />
+          </div>
+        ))}
+      </Slider>
+    </div>
+  )}
+</section>
+
   );
 };
 

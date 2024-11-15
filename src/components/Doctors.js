@@ -10,13 +10,13 @@ const Doctors = () => {
   const data = [
     {
       img: doc1,
-      name: "דר' סרינה מיטשל",
-      specialties: "מנתחת אורתופדית",
+      name: "דר' פייסל חמודי",
+      specialties: "רופא שיניים",
     },
     {
       img: doc2,
-      name: "דר' ג'וליאן בנט",
-      specialties: "קרדיולוג",
+      name: "דר' ח'ליל חמודי",
+      specialties: "רופא שיניים",
     },
   ];
 
@@ -70,10 +70,13 @@ const Doctors = () => {
     <div className="flex flex-col justify-center lg:px-32 px-5 pt-12 text-right" dir="rtl">
       <div className="flex flex-col items-center lg:flex-row justify-between mb-8 lg:mb-0">
         <div>
-          <h1 className="text-4xl font-semibold text-right lg:text-right">הרופאים שלנו</h1>
-          <p className="mt-2 text-right lg:text-right">
-            לורם איפסום דולור סיט, אמט קונסקטורר אדיפיסינג אלית. נטשנש, קווידם.
-          </p>
+        <h1 className="text-4xl font-semibold text-right lg:text-right">הרופאים שלנו</h1>
+<p className="mt-2 text-right lg:text-right">
+  הצוות הרפואי שלנו מורכב ממומחים בעלי ניסיון רב בתחומים שונים ברפואת שיניים. 
+  כל רופא מחויב להעניק טיפול מקצועי, אישי ואדיב לכל מטופל, תוך שימוש בטכנולוגיה מתקדמת 
+  ושיטות טיפול עדכניות.
+</p>
+
           <div className="mt-2 h-1 w-26 bg-secondColor mx-auto lg:mx-0"></div>
         </div>
         <div className="flex gap-5 mt-4 lg:mt-0">
