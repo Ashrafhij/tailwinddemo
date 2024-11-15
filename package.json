@@ -1,7 +1,7 @@
 {
   "name": "tailwinddemo",
   "version": "0.1.0",
-  "homepage": "https://Ashrafhij.github.io/tailwinddemo",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
