@@ -10,12 +10,12 @@ const Doctors = () => {
   const data = [
     {
       img: doc1,
-      name: "דר' פייסל חמודי",
+      name: "דר' פייסל חמודא",
       specialties: "רופא שיניים",
     },
     {
       img: doc2,
-      name: "דר' ח'ליל חמודי",
+      name: "דר' ח'ליל חמודא",
       specialties: "רופא שיניים",
     },
   ];
